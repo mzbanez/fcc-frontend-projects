@@ -1,0 +1,106 @@
+<div class="container-fluid margin"> 
+      <h1 style="margin:20px; font-size:50px;color:red;">Tic Tac Toe</h1>  
+ <div class="board" style="margin:20px;padding:0px;border:solid black 3px; margin-top:30px;border-radius:10px;margin:auto;height:380px;width:415px;"> 
+   
+      <div id="numberOfPlayer" class="gameBoard">
+           <h2> number of players</h2>
+           <button class="btn playerSetup" onclick=players('1')> One player </button>
+           <button class="btn playerSetup" onclick=players('2')>  Two players </button>   
+      </div>
+   
+   
+      <div id="chooseOX" style="display:none;" class="gameBoard">
+           <h2>choose player</h2>
+           <button class="btn playerSetup" style="margin:8px;font-size:45px;" onclick=chooseOX('O')> O </button>
+           <button class="btn playerSetup" style="font-size:45px;" onclick=chooseOX('X')>X</button>   
+      </div>
+   
+      <div id="xoBoard"  style="display:none;" class = "text-center gameBoard">
+        <div class="row">
+         <div class="col-xs-4">
+              <button class="btn boardBtn" onclick=fillCell(0)>
+               <span id="0"></span> 
+            </button>
+        </div>
+        <div class="col-xs-4 v">
+             <button class="btn boardBtn" onclick=fillCell(1)>
+               <span id="1"></span> 
+             </button>
+        </div>
+       <div class="col-xs-4">
+            <button class="btn boardBtn" onclick=fillCell(2)>
+             <span id="2"></span> 
+            </button>
+        </div>
+    </div>
+  
+        <div class="row">
+         <div class="col-xs-4 h">
+            <button class="btn boardBtn" onclick= fillCell(3)>      
+                <span id="3"></span>  
+            </button>
+        </div>
+        <div class="col-xs-4 v h">
+            <button class="btn boardBtn" onclick= fillCell(4)>      
+               <span id="4"></span> 
+            </button>
+        </div>
+       <div class="col-xs-4 h">
+             <button class="btn boardBtn" onclick= fillCell(5)>      
+               <span id="5"></span> 
+            </button>
+        </div>
+  </div>
+  
+        <div class="row">
+         <div class="col-xs-4">
+           <button class="btn boardBtn" onclick= fillCell(6)>   
+               <span id="6"></span> 
+            </button>
+        </div>
+        <div class="col-xs-4 v">
+          <button class="btn boardBtn" onclick= fillCell(7)>      
+               <span id="7"></span> 
+            </button>
+        </div>
+       <div class="col-xs-4">
+        <button class="btn boardBtn" onclick= fillCell(8)>      
+               <span id="8"></span> 
+            </button>
+        </div>
+  </div>
+          
+        <div id="scoreBoard" style="margin-top:18px; font-size:15px;">
+          <div class="row">
+             <div class="col-xs-6">
+                <span id="opponentScore"></span>
+             </div>
+              <div class="col-xs-6">
+                <span id="playerScore"></span>
+             </div>
+          </div>
+          <span id="drawScore"></span><br>
+        </div>
+    </div>
+
+    <div id="gameResult" class="resultBoard" style="display:none;position: relative;
+  top: -310px;font-size:35px;padding:50px; width:380px" class = "text-center gameBoard">
+        <span id="result"></span>
+     </div>
+  
+</div>
+      <div id="whoseTurn" style="margin:10px; font-size:15px;">
+             <div id="opponent" style="display:none;margin:20px;padding:0px;border:solid lightblue;margin:auto;width:418px;font-size:25px;width:418px;background:lightblue;border-radius:6px;">
+                <span id="oppTurn"></span>
+             </div>
+             <div id="player" style="display:none;margin:20px;padding:0px;border:solid pink;margin:auto;width:418px;font-size:25px;width:418px;background:pink;border-radius:6px;">
+                <span id="playerTurn" style="font-size:25;font-color:lightorange;"></span>
+             </div>
+      </div>
+
+  <br>
+     <div style="margin:10px;padding:0px;margin:auto;font-size:18px;">
+  <button class="resetAllBtn" style="border-radius:5px; font-family: 'Permanent Marker', cursive;color:green" onClick=resetAll()>Reset All</button>
+  </div>
+
+</div>
