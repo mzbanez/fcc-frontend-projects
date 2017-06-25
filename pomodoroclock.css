@@ -1,0 +1,38 @@
+body{
+  background: lightyellow;
+  text-align:center;
+  margin: 0 auto;
+  font-family: 'Baloo Bhaina';
+} 
+
+.mainBox{
+  border:0px black;
+  min-width: 330px;
+  max-width:600px;
+  height:200px;
+  width: 330px;
+  max-height:700px;
+  min-height: 50px;
+  border-radius:3%;
+  margin:auto;
+  padding: 10px;
+  font-size:15px;
+}
+
+
+#part{
+  padding: 15px;
+  font-size:35px;
+  font-family: 'Baloo Bhaina';
+}
+
+#demo{
+  padding: 30px;
+  font-size:45px;
+  font-family: 'Baloo Bhaina';
+}
+
+#startStop{
+  margin: 0 auto;
+  font-family: 'Baloo Bhaina';
+}
