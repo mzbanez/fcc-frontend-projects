@@ -1,0 +1,71 @@
+body{
+  text-align:center;
+  margin: 20 auto;
+  font-family: 'Permanent Marker', cursive;
+  font-color: purple;
+} 
+
+.v{
+    border-left:2px solid #000;
+    border-right:2px solid #000;
+}
+
+.h{
+    border-top:2px solid #000;
+    border-bottom:2px solid #000;
+}
+
+h2{
+  margin:50px; 
+  font-size:35px;
+  color:green;
+}
+
+.playerSetup{
+  margin:8px;
+  color:red;
+  font-size:22px;
+  font-family:'Permanent Marker', cursive;
+  background-color: lightyellow;
+}
+
+.boardBtn{
+  float:center;
+  margin:0px;
+  font-family: 'Permanent Marker', cursive;
+  font-size:60px;
+  background:lightyellow;
+  height: 95px;
+  width: 95px;
+}
+.boardBtn:focus {
+  text-decoration: none;
+  outline:none;
+  box-shadow: none;
+  border:none;
+  border-style:hidden;
+}
+
+.gameBoard{
+  margin:15px;
+  padding:0px;
+  border: solid black 3px; 
+  border-radius:10px;
+  margin:5 auto;
+  padding-left:13px;
+  padding-right:13px;
+  height:296px;
+  width:380px;
+  background:lightyellow;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.resultBoard{
+  background: rgba(171, 194, 153, 0.3);
+  margin:15px;
+  border-radius:10px;
+  height:296px;
+  width:380px;
+  color:red;
+}
+
