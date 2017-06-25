@@ -1,0 +1,52 @@
+<audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" id="sound-0"></audio>
+<audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" id="sound-1"></audio>
+<audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" id="sound-2"></audio>
+<audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" id="sound-3"></audio>
+<audio src="http://fcc-zipline-build-a-simon-game.bitballoon.com/assets/media/error.wav" id="sound-4"></audio>
+
+<audio src="http://fcc-zipline-build-a-simon-game.bitballoon.com/assets/media/success.wav" id="sound-5"></audio>
+
+<div class="container-fluid margin"> 
+ <div class = "wrap">
+   <h1 style="color:brown;">Simon Game</h1>
+  <div class="circle">
+ 
+      <div class="pad green" id="0" onclick="addToPlayer(this.id)">
+      </div>
+
+      <div class="pad red" id="1" onClick="addToPlayer(this.id)">
+  
+      </div>
+   
+     <div class="pad yellow" id="2"  onClick="addToPlayer(this.id)">
+ 
+      </div>
+
+      <div class="pad blue" id="3"  onClick="addToPlayer(this.id)">
+
+      </div>
+    
+
+      <div class="circle2">
+       </div>
+     <div class="circle3">
+         <div class="countHolder" id="counts"><span id="screen"> </span></div>
+         <div class="settings" style="font-size:10px;">
+           
+           <button id="startGame" class="startBtn" onclick=startGame()><span>start</span> </button>  <span style="color:black;">STRICT</span>
+           <button id="strictMode" class="strictBtn" onclick=strictMode()> <span id="strc">off</span></button>
+         </div>
+       
+           <label class="switch">
+              <input id="onOff" type="checkbox" data-toggle="toggle">
+              <div class="slider round" style="font-size:12px; padding:9px;">ON  OFF</div>
+          </label>
+       
+       </div>
+  
+  </div>
+
+  
+  </div>
+  
+</div>
